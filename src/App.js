@@ -8,7 +8,6 @@ function App() {
   return (
     <Router>
       <div className="appContainer container">
-        <Main/>
         <Switch>
           <Route path="/" exact component = {Main}/>
           <Route path="/register" exact component = {RegisterForm}/>

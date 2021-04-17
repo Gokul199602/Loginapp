@@ -15,7 +15,7 @@ const Main = () => (
       <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</span>
     </div>
     <div className="buttonElement text-center">
-      <Button text="가입하기"/>
+      <Button text="가입하기" link="/register"/>
       <div>
         <span className="normal--text--2 mg-xs">로그인</span>
       </div>
