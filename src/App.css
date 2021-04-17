@@ -12,10 +12,64 @@
   width: 100%;
 }
 
+.container
+{
+  display: flex;
+  position: relative;
+}
+
+.container>div
+{
+  flex:1;
+}
+
+.appContainer .svg--container.logoText
+{
+    height: 26%;
+    padding: 9px;
+    width: 40%;
+    margin: auto;
+}
+
 
 /* Utilites */
+.normal--text
+{
+  font-family: 'Merriweather';
+  font-weight: 400;
+  color:  #E5E5E5;
+  font-size: 14px;
+}
+.normal--text--2
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3B286D;
+}
+
+.mg-md
+{
+  margin-top: 10%;
+}
+.mg-sm
+{
+  margin-top: 6%;
+}
+.mg-xs
+{
+  margin-top: 3%;
+}
 .text-center
 {
   text-align: center;
+}
+.buttonElement
+{
+  position: absolute;
+  bottom: 6%;
+  width: 100%;
 }
 /* Utilites */

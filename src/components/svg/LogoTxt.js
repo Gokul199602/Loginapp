@@ -2,7 +2,7 @@ import React from 'react';
 
 const LogoText = () => {
   return(
-    <svg className="svg--container"  width="172" height="28" viewBox="0 0 172 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    <svg className="svg--container logoText"  width="172" height="28" viewBox="0 0 172 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <rect x="0.434021" width="171.133" height="28" fill="url(#pattern0)"/>
             <defs>
             <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
