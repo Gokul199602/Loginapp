@@ -1,0 +1,19 @@
+.Button
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.mainButton
+{
+    background: #3B286D;
+    color: #fff;
+    width: 287px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+}
+
