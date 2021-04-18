@@ -1,11 +1,15 @@
 import React from 'react';
-import styles from './RegisterForm.css';
 import Header from '../Header/Header';
 import Button from "../Button/Button";
+import Registration from "../Form/Registration/Registration"
+
 
 const RegisterForm = () => (
    <div className="main">
-   <Header />
+   <div className="main--topContainer">
+     <Header />   
+     <Registration /> 
+    </div>
    <div className="buttonElement text-center">
      <Button text="가입하기" link="/login"/>
      <div>

@@ -6,7 +6,7 @@
 }
 .mainButton
 {
-    background: #3B286D;
+    background: var(--default);
     color: #fff;
     width: 287px;
     height: 53px;
