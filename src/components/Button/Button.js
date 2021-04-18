@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Button.css';
-import {browserHistory} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const Button = (props) => {
   let buttonText = props.text,
@@ -8,14 +8,11 @@ const Button = (props) => {
   link =  props.link;
   const buttonAction = ()=>
   {
-    if(link)
-    window.location.href=link;
-    else
     callback();
   }
   return(
   <div className="Button">
-      <button className="mainButton" onClick={buttonAction}>{buttonText}</button>
+    {link?<Link to={link}><button className="mainButton">{buttonText}</button></Link>:<button className="mainButton" onClick={buttonAction}>{buttonText}</button>}
   </div>
   )
 };
