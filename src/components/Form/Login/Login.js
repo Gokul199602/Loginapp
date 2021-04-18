@@ -1,6 +1,8 @@
 import React, {useState,useEffect}  from 'react';
 import styles from './Login.css';
 import Auth from "../Auth";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons'
 
 const Login = (props) => {
   const [formData,setFormData] = useState({
@@ -77,14 +79,16 @@ const Login = (props) => {
   <form className="form mg-lg">
   <label>
      Email
-     <input type="email" name="email" placeholder="Email" className={formData.email.isValid?"":"error"} value={formData.email.input} onChange={formHandler} />
+     <input type="email" name="email" placeholder="Email" className={formData.email.isValid?"login":"login error"} value={formData.email.input} onChange={formHandler} />
+     <FontAwesomeIcon  icon={faEnvelope} />
      {formData.email.erroTextArr.map((err,index)=>{
         return (<span key={index} className="errorText">{err}</span>)
      })}
    </label>
    <label>
    로그인
-     <input type="password" name="password" placeholder="Password" className={formData.password.isValid?"":"error"} value={formData.password.input} onChange={formHandler} />
+     <input type="password" name="password" placeholder="Password" className={formData.password.isValid?"login":"login error"} value={formData.password.input} onChange={formHandler} />
+     <FontAwesomeIcon  icon={faLock} />
      {formData.password.erroTextArr.map((err,index)=>{
        return (<span key={index} className="errorText">{err}</span>)
      })}

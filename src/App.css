@@ -59,6 +59,12 @@
 {
   border-bottom: 1px solid red;
 }
+.form input.login
+{
+  padding: 11px 0px;
+  padding-left: 18px;
+  box-sizing: border-box;
+}
 .form>label
 {
   font-family: Roboto;
@@ -69,6 +75,12 @@
   line-height: 19px;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.form>label svg
+{
+  position: absolute;
+  top: 50%;
 }
 
 .form>label:not(:last-child)
@@ -93,6 +105,7 @@ color: #B7B7B7;
   border: none;
   border-bottom: 1px solid #B7B7B7;
   outline: none;
+  width: 100%;
 }
 
 .form>label input:focus
