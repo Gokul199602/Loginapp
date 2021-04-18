@@ -80,7 +80,7 @@
 .form>label svg
 {
   position: absolute;
-  top: 50%;
+  top: 29px;
 }
 
 .form>label:not(:last-child)
