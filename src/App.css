@@ -50,6 +50,15 @@
   display: flex;
   flex-direction: column;
 }
+.form .errorText
+{
+  font-size: 10px;
+  color: red;
+}
+.form input.error
+{
+  border-bottom: 1px solid red;
+}
 .form>label
 {
   font-family: Roboto;

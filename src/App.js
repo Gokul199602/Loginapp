@@ -3,8 +3,9 @@ import Main from "./components/Main/Main";
 import LoginForm from "./components/LoginForm/LoginForm";
 import RegisterForm from "./components/RegisterForm/RegisterForm";
 import Home from "./components/Home/Home";
-import {Link,Route,Switch,  BrowserRouter as Router} from 'react-router-dom';
+import {Link,Route,Switch,  BrowserRouter as Router,Redirect} from 'react-router-dom';
 function App() {
+  let checkIslogged = localStorage.isLogged;
   return (
     <Router>
       <div className="appContainer container">
@@ -12,7 +13,7 @@ function App() {
           <Route path="/" exact component = {Main}/>
           <Route path="/register" exact component = {RegisterForm}/>
           <Route path="/login" component = {LoginForm}/>
-          <Route path="/home" exact component = {Home}/>
+          {checkIslogged? <Route path="/home" exact component = {Home}/>:<Redirect exact from="/home" to="" />}
         </Switch>
       </div>
     </Router>

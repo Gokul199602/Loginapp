@@ -13,7 +13,7 @@ const RegisterForm = () => (
    <div className="buttonElement text-center">
      <Button text="가입하기" link="/login"/>
      <div>
-       <span className="normal--text--2 mg-xs">로그인</span>
+       <span className="normal--text--2 mg-xs">이미 계정이 있으신가요? 로그인</span>
      </div>
    </div>
  </div>
