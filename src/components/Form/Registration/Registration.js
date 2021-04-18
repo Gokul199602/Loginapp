@@ -28,28 +28,28 @@ const Registration = () => (
      <input type="password" name="name" />
    </label>
    <div className="chooseOption">
-     <label class="radioContainer">최소 8자 이상
+     <label className="radioContainer">최소 8자 이상
        <input type="radio" name="radio"/>
-       <span class="checkmark"></span>
+       <span className="checkmark"></span>
      </label>
-     <label class="radioContainer">최소 하나의 대문자
+     <label className="radioContainer">최소 하나의 대문자
        <input type="radio" name="radio"/>
-       <span class="checkmark"></span>
+       <span className="checkmark"></span>
      </label>
    </div>
    <div className="chooseOption">
-     <label class="radioContainer">최소 하나의 숫자
+     <label className="radioContainer">최소 하나의 숫자
        <input type="radio" name="radio"/>
-       <span class="checkmark"></span>
+       <span className="checkmark"></span>
      </label>
-     <label class="radioContainer">최소 하나의 특수문자
+     <label className="radioContainer">최소 하나의 특수문자
        <input type="radio" name="radio"/>
-       <span class="checkmark"></span>
+       <span className="checkmark"></span>
      </label>
    </div>
-   <label class="checkboxContainer max-content-center mg-lg">이용약관에 동의합니다
+   <label className="checkboxContainer max-content-center mg-lg">이용약관에 동의합니다
      <input type="checkbox" />
-     <span class="checkmark"></span>
+     <span className="checkmark"></span>
    </label>
    </form>
 );

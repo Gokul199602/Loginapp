@@ -18,7 +18,7 @@ const LoginForm = () => {
    <div className="buttonElement text-center">
      <Button text="가입하기" eventFunction={loginButton} />
      <div>
-       <span className="normal--text--2 mg-xs">로그인</span>
+       <span className="normal--text--2 mg-sm">로그인</span>
      </div>
    </div>
  </div>
