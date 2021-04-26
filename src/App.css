@@ -5,10 +5,11 @@
 
 .appContainer
 {
-  width: 414px;
+  max-width: 414px;
   margin: auto;
   min-height: 100vh;
   height: auto;
+  width: 100%;
 }
 
 .appContainer .svg--container
@@ -62,12 +63,13 @@
 .form input.login
 {
   padding: 11px 0px;
-  padding-left: 18px;
+  padding-left: 30px;
   box-sizing: border-box;
+  font-weight: 700;
 }
 .form>label
 {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   color:  #707070;
   font-style: normal;
   font-weight: normal;
@@ -92,7 +94,7 @@
 .form>label input
 {
   
-font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
@@ -254,7 +256,7 @@ color: #B7B7B7;
 /* Utilites */
 .header--text
 {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 23px;
@@ -272,7 +274,7 @@ color: #B7B7B7;
 .normal--text--2
 {
   display: block;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
